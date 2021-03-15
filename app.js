@@ -8,8 +8,10 @@ const server =
     (req,res)=> {               //Anonymous function to handle the request
       res.statusCode = 200      //code for OK
       res.setHeader('Content-Type', 'text/plain') //Set the mime type
-      res.end('Hello World')    //Close the response and provide content
+      res.end('Hello World')   
+      console.log('My favourite color is black') //Close the response and provide content
     }                           //No return needed, we modified the res object we got
+
 )
 console.log('My favourite color is black')
 server.listen(port, hostname, () => {   //Start the server
