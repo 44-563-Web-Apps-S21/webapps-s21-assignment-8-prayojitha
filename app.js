@@ -11,7 +11,7 @@ const server =
       res.end('Hello World')    //Close the response and provide content
     }                           //No return needed, we modified the res object we got
 )
-
+console.log('My favourite color is black')
 server.listen(port, hostname, () => {   //Start the server
   console.log(`Server running at http://${hostname}:${port}/`)  //Log the request
 })
