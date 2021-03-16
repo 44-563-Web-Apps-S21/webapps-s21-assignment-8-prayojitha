@@ -19,12 +19,14 @@ const server =
 
       if (req.method === 'GET' ) {
        
-          console.log("Look for query parameter data: " + search_params.get("data"))
+          console.log("Look for query parameter data: " + search_params.get("x"))
 
           // Process the queries here
           res.statusCode = 200      //code for OK
           res.setHeader('Content-Type', 'text/plain') 
+          f(x)=Math.abs(x)
           res.write("You rang?")
+          res.write(f(x))
           res.end();
         
       } else {
